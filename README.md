@@ -19,10 +19,21 @@ esto se muestran a continuación.
 ## Problema 1: El inventario
 
 Para poder equipar un arma, cada personaje deberá tener un inventario donde
-estarán las armas que puede usar. Para eso, al inicio del juego se deberá 
+estarán las armas que puede usar. Para esto, al inicio del juego se deberá 
 inicializar el inventario del personaje con una cantidad fija de armas aleatorias,
 pero debe asegurarse de que las armas sean de algún tipo que pueda equiparse
 el personaje (por ejemplo, un Guerrero no debe tener un Cuchillo en su inventario).
+
+Para inicializar el inventario, debe implementar un método para los personajes
+de la forma:
+
+```scala
+def initializeInventory(x: Int): Unit
+```
+
+donde `x` es la cantidad de armas que tendrá el inventario. Debe escoger un patrón 
+de diseño que sea adecuado para que se pueda externalizar la creación de armas, y 
+asignarle a cada personaje los posibles tipos de armas que pueda tener.
 
 ## Problema 2: Mezclando armas
 
