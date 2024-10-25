@@ -1,5 +1,5 @@
 package weapon
 
-abstract class AbstractWeapon(private val name: String, private val damage: Int) {
+abstract class AbstractWeapon(private val name: String, private val damage: Int) extends Weapon {
   
 }
